@@ -1,0 +1,12 @@
+actor: AcceptanceTester
+modules:
+  enabled:
+    - WebDriver:
+        url: 'https://stellantis.autocrm.ru/'
+        browser: chrome
+    - Tests\Support\Helper\TestUserHelper
+    - Tests\Support\Helper\TestApiHelper
+    - REST:
+        depends: PhpBrowser
+        url: 'https://stellantis.autocrm.ru/'
+        shortDebugResponse: 300 # only the first 300 characters of the response

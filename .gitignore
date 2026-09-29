@@ -1,0 +1,4 @@
+.idea
+vendor
+tests/Support/_generated
+tests/_output
